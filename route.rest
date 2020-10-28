@@ -1,0 +1,30 @@
+GET http://localhost:3000/notes/
+
+###
+
+GET http://localhost:3000/notes/5f99a4bf572d5933d429980e
+
+###
+
+DELETE http://localhost:3000/notes/5f99a313f1b7ce33d4dd7c96
+
+
+###
+
+PATCH http://localhost:3000/notes/5f99aee5b5fbc2648ea302f
+Content-Type: application/json 
+
+{
+    "content": "Dolor sit"
+}
+
+###
+
+
+POST http://localhost:3000/notes
+Content-Type: application/json 
+
+{
+    "title": "Chapter 1",
+    "content": "Lorem ipsum..."
+}
